@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>EcollApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<!-- External CSS -->
+<link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/vendor/select2/select2.min.css">
+<link rel="stylesheet" href="./assets/vendor/owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="./assets/vendor/lightcase/lightcase.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="./assets/css/style.min.css">
+
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+<!-- Panel de administracion -->
+<!-- <link href="assets/css/styles.css" rel="stylesheet" />
+<link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet"
+  crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"
+  crossorigin="anonymous"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/chart-working-demo.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+<script src="assets/demo/datatables-demo.js"></script>
+</head> -->
+
+
+
+  <body data-spy="scroll" data-target="#navbar" class="static-layout">
+    <nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+          <h3 class="font-weight-bolder mb-0">ECOL</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header"
+          aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home" routerLink="home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about" routerLink="about">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicio" routerLink="servicio">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="producto" routerLink="producto">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact" routerLink="contact">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario" routerLink="formulario">Formulario</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ecolo" routerLink="ecolo">Ecologico</a>
+            </li>
+            <li class="nav-item">
+              <a id="side-search-open" class="nav-link" href="#">
+                <span class="lnr lnr-magnifier"></span>
+              </a>
+            </li>
+            <li class="nav-item only-desktop">
+              <a class="nav-link" id="side-nav-open" href="#">
+                <span class="lnr lnr-menu"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="side-nav" class="sidenav">
+      <a href="javascript:void(0)" id="side-nav-close">&times;</a>
+
+      <div class="sidenav-content">
+        <p>
+          Kuncen WB1, Wirobrajan 10010, DIY
+        </p>
+        <p>
+          <span class="fs-16 primary-color">(+68) 120034509</span>
+        </p>
+        <p>info@yourdomain.com</p>
+      </div>
+    </div>
+    <div id="side-search" class="sidenav">
+      <a href="javascript:void(0)" id="side-search-close">&times;</a>
+      <div class="sidenav-content">
+        <form action="">
+
+          <div class="input-group md-form form-sm form-2 pl-0">
+            <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="input-group-text red lighten-3" id="basic-text1">
+                <span class="lnr lnr-magnifier"></span>
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+    <div class="jumbotron d-flex align-items-center featurettes overlay bg-fixed" style="background-image: url(/assets/img/bg.jpg);">
+      <div class="container text-center">
+        <h1 class="display-1 mb-4"><img src="/assets/img/04.png" alt=""></h1>
+        <!-- <h1 class="display-1 mb-4 featurettes overlay bg-fixed" style="background-image: url(/assets/img/ecolo1.png);">EC <img src="/assets/img/ecolo1.png" alt=""> L</h1> -->
+      </div>
+      <div class="triangle-up"></div>
+      <div class="triangle-up-2"></div>
+      <div class="rectangle-transparent-1"></div>
+      <div class="rectangle-transparent-2"></div>
+      <div class="circle-1"></div>
+      <div class="circle-2"></div>
+      <div class="circle-3"></div>
+      <div class="triangle triangle-1">
+        <img src="/assets/img/obj_triangle.png" alt="">
+      </div>
+      <div class="triangle triangle-2">
+        <img src="/assets/img/obj_triangle.png" alt="">
+      </div>
+      <div class="triangle triangle-3">
+        <img src="/assets/img/obj_triangle.png" alt="">
+      </div>
+      <div class="triangle triangle-4">
+        <img src="/assets/img/obj_triangle.png" alt="">
+      </div>
+    </div> <!-- Features Section aqui inicia-->
+    <app-root></app-root>
+    </div>
+    <footer class="mastfoot my-3">
+      <div class="inner container">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 d-flex align-items-center">
+
+          </div>
+          <div class="col-lg-4 col-md-12 d-flex align-items-center">
+            <p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co"
+                target="_blank">GetTemplates</a>.</p>
+          </div>
+
+          <div class="col-lg-4 col-md-12">
+            <nav class="nav nav-mastfoot justify-content-center">
+              <a class="nav-link" href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </nav>
+          </div>
+
+        </div>
+        <app-root></app-root>
+      </div>
+    </footer> <!-- External JS -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    
+    <script src="./assets/vendor/bootstrap/popper.min.js"></script>
+    
+    
+    <script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/vendor/select2/select2.min.js "></script>
+    <script src="./assets/vendor/owlcarousel/owl.carousel.min.js"></script>
+    <script src="./assets/vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./assets/vendor/isotope/isotope.min.js"></script>
+    <script src="./assets/vendor/lightcase/lightcase.js"></script>
+    <script src="./assets/vendor/waypoints/waypoint.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Main JS -->
+    <script src="./assets/js/app.min.js "></script>
+    <script src="//localhost:35729/livereload.js"></script> 
+
+  <app-root></app-root>
+</body>
+</html>
