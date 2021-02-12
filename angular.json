@@ -125,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ecoll-app"
+    }
+  },
+  "defaultProject": "ecoll-app",
+  "cli": {
+    "analytics": "588198f1-15fd-427b-9059-2e0024430449"
+  }
 }
